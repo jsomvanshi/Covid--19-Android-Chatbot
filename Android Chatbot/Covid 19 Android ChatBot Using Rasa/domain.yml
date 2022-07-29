@@ -1,0 +1,115 @@
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - corona_safety
+  - corona_cases_info
+  - vaccine_news_info
+  - health_news_info
+  - all_coronavirus_news_info
+  - precautions
+  - define_corona
+  - coronavirus_mutation
+  - variant_of_concern
+
+entities:
+  - country
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you"
+
+  utter_precautions:
+  - text: "To prevent the spread of COVID-19:
+           \n \u2022 Maintain a safe distance from others (at least 1 metre), even if they don’t appear to be sick.
+           \n \u2022 Wear a mask in public, especially indoors or when physical distancing is not possible.
+           \n \u2022 Choose open, well-ventilated spaces over closed ones. Open a window if indoors.
+           \n \u2022 Clean your hands often. Use soap and water, or an alcohol-based hand rub.
+           \n \u2022 Get vaccinated when it’s your turn. Follow local guidance about vaccination.
+           \n \u2022 Cover your nose and mouth with your bent elbow or a tissue when you cough or sneeze.
+           \n \u2022 Stay home if you feel unwell."
+  
+  utter_safety:
+  - text: "COVID-19 affects different people in different ways. 
+           \nMost infected people will develop mild to moderate illness and recover without hospitalization.
+           \n \u2022 Most common symptoms:
+           \n \u2022 Fever
+           \n \u2022 Dry cough
+           \n \u2022 Tiredness
+           \nLess common symptoms:
+           \n\u2022 Aches and pains
+           \n\u2022 Sore throat
+           \n\u2022 Diarrhoea
+           \n\u2022 Conjunctivitis
+           \n\u2022 Headache
+           \n\u2022 Loss of taste or smell
+           \n\u2022 A rash on skin, or discolouration of fingers or toes
+           \nSerious symptoms:
+           \n\u2022 Difficulty breathing or shortness of breath
+           \n\u2022 Chest pain or pressure
+           \n\u2022 Loss of speech or movement
+           \nSeek immediate medical attention if you have serious symptoms. Always call before visiting your doctor or health facility.
+           \nPeople with mild symptoms who are otherwise healthy should manage their symptoms at home.
+           \nOn average it takes 5-6 days from when someone is infected with the virus for symptoms to show, however it can take up to 14 days."
+
+  utter_corona_defination:
+  - text: "Coronavirus is a larger family of viruses that cause illnesses such as the common cold, severe acute respiratory syndrome (SARS), and the Middle East respiratory syndrome (MERS). A new outbreak of the coronavirus erupted in 2019 in China.
+           \nSome other names attributed to the coronavirus are severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2) and coronavirus disease 2019 (COVID-19). 
+           \nCoronavirus affects both animals and humans. There can be cases where the virus affects animals and turns into a new virus that affects humans. These are more lethal forms of coronavirus since they can lead to pneumonia, which can be life-threatening.
+           \nThe three most common illnesses by the virus recorded are: 
+           \nSARS (severe acute respiratory syndrome) – It’s a fatal respiratory illness discovered in China in 2002. There haven’t been any new cases reported under this virus since 2002.
+           \nMERS (Middle East respiratory syndrome)  This severe respiratory illness was first reported in Saudi Arabia in 2012. From there, it spread to 27 countries including the USA, where two cases were reported. All cases were discovered to have their source in the Arabian Peninsula.
+           \nCOVID-19 (coronavirus disease 2019) - Erupting in Wuhan city in 2019, the source is travel from the Hubei Province. Since then, the disease has spread to several countries around the world, with some cases reported in the USA.
+           \nAll updates with regards to the disease are being monitored by the Centers for Disease Control (CDC) and the World Health Organization (WHO)."
+  
+  utter_coronavirus_mutation:
+  - text: "Variants of viruses occur when there is a change — or mutation — to the virus’s genes. Ray says it is the nature of RNA viruses such as the coronavirus to evolve and change gradually. “Geographic separation tends to result in genetically distinct variants,” he says.
+           \n Mutations in viruses — including the coronavirus causing the COVID-19 pandemic — are neither new nor unexpected. Bollinger explains: “All RNA viruses mutate over time, some more than others. For example, flu viruses change often, which is why doctors recommend that you get a new flu vaccine every year.”
+           "
+  
+  utter_variant_of_concern:
+  - text: "Coronavirus variants are classified in different categories by organizations such as the World Health Organization (WHO) and the Centers for Disease Control and Prevention (CDC).
+           \nA variant of interest is a coronavirus variant that, compared with earlier forms of the virus, has genetic characteristics that predict greater transmissibility, evasion of immunity or diagnostic testing, or more severe disease.
+           \nA variant of concern has been observed to be more infectious, and is more likely to cause breakthrough infections or reinfections in those who are vaccinated or previously infected. These variants are more likely to cause severe disease, evade diagnostic tests, or resist antiviral treatment.
+           \nAlpha, beta, gamma, delta and omicron variants of the SARS-CoV-2 coronavirus are classified as variants of concern.
+           \nA variant of high consequence is a variant for which current vaccines do not offer protection. As of now, there are no SARS-CoV-2 variants of high consequence."
+           
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+actions:
+- utter_greet
+- utter_happy
+- utter_goodbye
+- corona_cases_action
+- utter_safety
+- utter_cheer_up
+- utter_did_that_help
+- vaccine_news_action
+- health_news_action
+- all_coronavirus_news_action
+- utter_precautions
+- utter_corona_defination
+- utter_coronavirus_mutation
+- utter_variant_of_concern

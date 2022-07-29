@@ -1,0 +1,200 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - hey there
+    - let's go
+    - hey dude
+
+- intent: goodbye
+  examples: |
+    - cu
+    - cee you later
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - fine
+    - great
+    - amazing
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - good
+    - happy
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - who are you?
+
+- intent: corona_cases_info
+  examples: |
+    - [india](country) corona info
+    - [usa](country)
+    - [uk](country)
+    - [afghanistan](country)
+    - count of corona cases in [india](country)
+    - [usa](country) america
+    - [china](country) china
+    - [pakistan](country) pakistan
+    - [nepal](country) Nepal
+    - [bangladesh](country) Bangladesh
+    - [austria](country)
+    - [australia](country)
+    - [france](country)
+    - [italy](country)
+    - [germany](country)
+    - [canada](country)
+    - [mexico](country)
+    - [portugal](country)
+    - [brazil](country)
+    - [poland](country)
+    - [russia](country)
+    - [japan](country)
+    - [iran](country)
+    - [iraq](country)
+    - [bhutan](country)
+    - [ireland](country)
+    - [egypt](country)
+    - [turkey](country)
+    - [algeria](country)
+    - [andorra](country)
+    - [angola](country)
+    - [argentina](country)
+    - [armenia](country)
+    - [azerbaijan](country)
+    - [bahamas](country)
+    - [bahrain](country)
+    - [belgium](country)
+    - [belize](country)
+    - [botswana](country)
+    - [bulgaria](country)
+    - [brunei](country)
+    - [chile](country)
+    - [colombia](country)
+    - [cambodia](country)
+    - [cameroon](country)
+    - [cuba](country)
+    - [denmark](country)
+    - [fiji](country)
+    - [finland](country)
+    - [georgia](country)
+    - [greece](country)
+    - [hungary](country)
+    - [kazakhstan](country)
+    - [kuwait](country)
+    - [lebanon](country)
+    - [laos](country)
+    - [madagascar](country)
+    - [malaysia](country)
+    - [maldives](country)
+    - [mali](country)
+    - [manaco](country)
+    - [myanmar](country)
+    - [netherlands](country)
+    - [north korea](country)
+    - [norway](country)
+
+- intent: corona_safety
+  examples: |
+    - symptoms for corona
+    - how to check if I have corona or not?
+    - what are the common symptoms for corona
+
+- intent: precautions
+  examples: |
+    - precautions for corona
+    - what are precautionary measures for corona
+    - what are the precautions
+    - precautions
+
+- intent: vaccine_news_info
+  examples: |
+    - vaccine news
+    - latest news of vaccines
+    - news related to vaccine
+
+- intent: health_news_info
+  examples: |
+    - health news
+    - latest news of health
+    - news related to health
+
+- intent: all_coronavirus_news_info
+  examples: |
+    - coronavirus news
+    - latest news of coronavirus
+    - news related to coronavirus
+
+- intent: define_corona
+  examples: |
+    - What is corona
+    - what is coronavirus
+    - corona meaning
+    - coronavirus meaning
+
+- intent: coronavirus_mutation
+  examples: |
+    - what is mutation
+    - Why does the coronavirus change?
+    - what is coronavirus mutation
+    - what is corona mutation
+  
+- intent: variant_of_concern
+  examples: |
+    - What is a variant of concern?
+    - variant of concern

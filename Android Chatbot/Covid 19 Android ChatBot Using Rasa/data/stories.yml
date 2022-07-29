@@ -1,0 +1,80 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: corona cases
+  steps:
+  - intent: corona_cases_info
+  - action: corona_cases_action
+
+- story: corona safety
+  steps:
+  - intent: corona_safety
+  - action: utter_safety
+
+- story: precautions
+  steps:
+  - intent: precautions
+  - action: utter_precautions
+
+- story: bot challenge
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- story: vaccine news action
+  steps:
+  - intent: vaccine_news_info
+  - action: vaccine_news_action
+
+- story: health news action
+  steps:
+  - intent: health_news_info
+  - action: health_news_action
+
+- story: all coronavirus news action
+  steps:
+  - intent: all_coronavirus_news_info
+  - action: all_coronavirus_news_action
+
+- story: corona_meaning
+  steps:
+  - intent: define_corona
+  - action: utter_corona_defination
+
+- story: about coronavirus_mutation
+  steps:
+  - intent: coronavirus_mutation
+  - action: utter_coronavirus_mutation
+
+- story: about variant_of_concern
+  steps:
+  - intent: variant_of_concern
+  - action: utter_variant_of_concern
